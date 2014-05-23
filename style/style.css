@@ -1,0 +1,83 @@
+body {
+	background: black;
+	font-family: Helvetica;
+}
+
+#canvas-outer-wrapper {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	width: 100%;
+	height: 100%;
+	text-transform: uppercase;
+}
+
+#canvas-outer-wrapper.custom {
+	overflow: hidden;
+}
+
+#canvas-outer-wrapper.custom.center {
+	justify-content: center;
+}
+
+#goo, #canvas-inner-wrapper {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	width: 100%;
+	height: 100%;
+	text-transform: uppercase;
+	overflow: hidden;
+	cursor: default;
+}
+
+#canvas-outer-wrapper.custom #canvas-inner-wrapper {
+	position: relative;
+	flex-shrink: 0;
+	flex-grow: 0;
+}
+
+div#loading-overlay {
+	margin: auto;
+	font-family: sans-serif;
+	width: 400px;
+	height: 400px;
+	text-align: center;
+	position: absolute;
+	bottom: 0px; top: 0px;
+	right: 0px; left: 0px;
+}
+
+div#loading-message h2{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+div#progress-bar {
+	width:400px;
+	margin:auto;
+	background:#555;
+	height:2px;
+}
+
+div#progress {
+	background: white;
+	height:100%;
+	width:0;
+	box-shadow: 0px 0px 4px rgba(255,255,255,1);
+}
+
+div#share-buttons {
+	position: absolute;
+	right:15px;
+	bottom: 10px;
+	z-index: 1;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<title>P2 test | Goo Create</title>
+<script src="js/p2.js"></script>
+<script>
+// If you try to load a scene without a server, you're gonna have a bad time
+if (window.location.protocol==='file:') {
+	alert('You need to run this webpage on a server. Check the code for links and details.');
+	/*
+
+	Loading scenes uses AJAX requests, which require that the webpage is accessed via http. Setting up
+	a web server is not very complicated, and there are lots of free options. Here are some suggestions
+	that will do the job and do it well, but there are lots of other options.
+
+	- Windows
+
+	There's Apache (http://httpd.apache.org/docs/current/platform/windows.html)
+	There's nginx (http://nginx.org/en/docs/windows.html)
+	And for the truly lightweight, there's mongoose (https://code.google.com/p/mongoose/)
+
+	- Linux
+	Most distributions have neat packages for Apache (http://httpd.apache.org/) and nginx
+	(http://nginx.org/en/docs/windows.html) and about a gazillion other options that didn't
+	fit in here.
+	One option is calling 'python -m SimpleHTTPServer' inside the unpacked folder if you have python installed.
+
+
+	- Mac OS X
+
+	Most Mac users will have Apache web server bundled with the OS.
+	Read this to get started: http://osxdaily.com/2012/09/02/start-apache-web-server-mac-os-x/
+
+	*/
+}
+</script>
+
+<!-- disable native mobile pinch-to-zoom, replacing with the Goo Engine zoom -->
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+
+
+
+
+<meta property="og:url" content="https://s3-eu-west-1.amazonaws.com/goote.ch/exports/22363ae77ab44dd683f769280251b08b/template.zip"/>
+
+<meta property="og:title" content="Default Goo Project"/>
+<meta property="og:updated_time" content="2014-05-23T08:17:09.959678+00:00"/>
+<meta property="og:site_name" content="Goo Create"/>
+<meta property="og:type" content="website"/>
+
+<link rel="stylesheet" type="text/css" href="style/style.css">
+
+<script src="lib/Tween.js"></script>
+<script src="lib/requireLib.js"></script>
+<script src="//code.gooengine.com/0.10.0/lib/goo.js"></script>
+<script src="//code.gooengine.com/0.10.0/lib/fsmpack.js"></script>
+<script src="//code.gooengine.com/0.10.0/lib/quadpack.js"></script>
+<script src="//code.gooengine.com/0.10.0/lib/timelinepack.js"></script>
+<script src="js/loadScene.js"></script>
+
+
+</head>
+
+<body>
+	<div id="loading-overlay">
+		<div id="loading-message">
+			<h2>Loading project</h2>
+			<div id="progress-bar">
+				<div id="progress"></div>
+			</div>
+		</div>
+	</div>
+	<div id="canvas-outer-wrapper">
+		<div id="canvas-inner-wrapper">
+
+		</div>
+	</div>
+</body>
+
+</html>
