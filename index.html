@@ -6,6 +6,9 @@
 <title>P2 test | Goo Create</title>
 <script src="js/p2.js"></script>
 <script>
+// Fix for the "setVelocity" error in chrome
+PannerNode.prototype.setVelocity = AudioListener.prototype.setVelocity = function(){};
+
 // If you try to load a scene without a server, you're gonna have a bad time
 if (window.location.protocol==='file:') {
 	alert('You need to run this webpage on a server. Check the code for links and details.');
